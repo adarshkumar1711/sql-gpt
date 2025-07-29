@@ -431,6 +431,55 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Footer Links */}
+      <footer className="py-12 px-4 bg-[#0A0F1C] border-t border-[#1d2232]">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
+            <a 
+              href="/privacy-policy" 
+              className="text-gray-400 hover:text-white transition-colors duration-200 text-sm md:text-base"
+            >
+              Privacy Policy
+            </a>
+            <span className="text-gray-600 hidden md:inline">|</span>
+            <a 
+              href="/terms-conditions" 
+              className="text-gray-400 hover:text-white transition-colors duration-200 text-sm md:text-base"
+            >
+              Terms & Conditions
+            </a>
+            <span className="text-gray-600 hidden md:inline">|</span>
+            <a 
+              href="/cancellations-refunds" 
+              className="text-gray-400 hover:text-white transition-colors duration-200 text-sm md:text-base"
+            >
+              Cancellations and Refunds
+            </a>
+            <span className="text-gray-600 hidden md:inline">|</span>
+            <a 
+              href="/shipping-policy" 
+              className="text-gray-400 hover:text-white transition-colors duration-200 text-sm md:text-base"
+            >
+              Shipping Policy
+            </a>
+            <span className="text-gray-600 hidden md:inline">|</span>
+            <a 
+              href="/contact-us" 
+              className="text-gray-400 hover:text-white transition-colors duration-200 text-sm md:text-base"
+            >
+              Contact Us
+            </a>
+          </div>
+          
+          {/* Copyright */}
+          <div className="text-center mt-8 pt-8 border-t border-[#1d2232]">
+            <p className="text-gray-500 text-sm">
+              © {new Date().getFullYear()} SqlGPT. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+
     </div>
   );
 }
